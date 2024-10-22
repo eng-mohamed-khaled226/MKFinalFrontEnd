@@ -70,8 +70,8 @@ function Nav() {
 
               setShowDropdown(!showDropdown)
             }}><FontAwesomeIcon icon={faBars} style={{ verticalAlign: "middle", color: "#697a8d" }}></FontAwesomeIcon></button>
-          <img src={logo} width="30" height="30" class="d-inline-block align-top" alt="" style={{ backgroundColor: "transparent", marginLeft: "0.6rem" }} />
-          مالك سكول
+          <a href="/"> <img src={logo} width="30" height="30" class="d-inline-block align-top" alt="" style={{ backgroundColor: "transparent", marginLeft: "0.6rem" }} />
+          </a> مالك سكول
         </a>
         <div class="navbar-brand" href="#" style={{ display: "flex", marginLeft: "1rem" }}>
           <a href=""><FontAwesomeIcon icon={faBell} style={{ verticalAlign: "middle", marginLeft: "1rem" }}></FontAwesomeIcon></a>

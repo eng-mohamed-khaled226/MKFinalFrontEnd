@@ -25,95 +25,124 @@ import MyStudentsPage from "../../../pages/MyStudentsPage";
 import HomeWorkPage from "../../../pages/HomeWorkPage";
 import MyHomeWorkPage from "../../../pages/Student/MyHomeWorkPage";
 import UserInfoPage from "../../../pages/UserInfoPage";
-
+import NotFound from "../../../pages/NotFound";
 
 
 const router = createBrowserRouter(
-     [
-        { path: "/", 
-            element:<HomePage/>
+    [
+        {
+            path: "/",
+            element: <HomePage />,
+            errorElement: <NotFound />,
+
+
         },
-        { path: "/teacher", 
-            element:<TeacherPage/>
+        {
+            path: "/teacher",
+            element: <TeacherPage />
         },
-        { path: "/show-teacher", 
-            element:<ShowTeacherPage/>
+        {
+            path: "/show-teacher",
+            element: <ShowTeacherPage />
         },
-        { path: "/teacher-info/:teacherId", 
-            element:<TeacherInfoPage/>
+        {
+            path: "/teacher-info/:teacherId",
+            element: <TeacherInfoPage />
         },
-        { path: "/teacher-edit/:teacherId", 
-            element:<TeacherEditInfoPage/>
+        {
+            path: "/teacher-edit/:teacherId",
+            element: <TeacherEditInfoPage />
         },
-        { path: "/absent-employ", 
-            element:<AbsentPage/>
+        {
+            path: "/absent-employ",
+            element: <AbsentPage />
         },
-        { path: "/messages", 
-            element:<MassagesPage/>
+        {
+            path: "/messages",
+            element: <MassagesPage />
         },
-        { path: "/login", 
-            element:<UsersPage/>
+        {
+            path: "/login",
+            element: <UsersPage />
         },
-        { path: "/userinfo/:userId", 
-            element:<UserInfoPage/>
+        {
+            path: "/userinfo/:userId",
+            element: <UserInfoPage />
         },
-        { path: "/myAttendance/:userId", 
-            element:<AttendancePage/>
+        {
+            path: "/myAttendance/:userId",
+            element: <AttendancePage />
         },
-        { path: "/attendance", 
-            element:<AttendanceAdminPage/>
+        {
+            path: "/attendance",
+            element: <AttendanceAdminPage />
         },
-        { path: "/TimetablePage", 
-            element:<TimetablePage/>
+        {
+            path: "/TimetablePage",
+            element: <TimetablePage />
         },
-        { path: "/EmpMessagesPage", 
-            element:<EmpMessagesPage/>
+        {
+            path: "/EmpMessagesPage",
+            element: <EmpMessagesPage />
         },
-        { path: "/mytimetable/:userId", 
-            element:<TeacherTimeTablePage/>
+        {
+            path: "/mytimetable/:userId",
+            element: <TeacherTimeTablePage />
         },
-  
-        { path: "/messagestoadmin/:userId", 
-            element:<MessagesToAdminPage/>
+
+        {
+            path: "/messagestoadmin/:userId",
+            element: <MessagesToAdminPage />
         },
-        { path: "/showstudent/", 
-            element:<ShowStudentPage/>
+        {
+            path: "/showstudent/",
+            element: <ShowStudentPage />
         },
-        { path: "/student-info/:studentId", 
-            element:<StudentInfoPage/>
+        {
+            path: "/student-info/:studentId",
+            element: <StudentInfoPage />
         },
-        { path: "/add-student", 
-            element:<AddStudentPage/>
+        {
+            path: "/add-student",
+            element: <AddStudentPage />
         },
-        { path: "/edit-student/:studentId", 
-            element:<StudentEditInfoPage/>
+        {
+            path: "/edit-student/:studentId",
+            element: <StudentEditInfoPage />
         },
-        { path: "/classlist",  
-            element:<ClassListPage/>
+        {
+            path: "/classlist",
+            element: <ClassListPage />
         },
-        { path: "/mytimetables/:userId",  
-            element:<StudentTimeTablePage/>
+        {
+            path: "/mytimetables/:userId",
+            element: <StudentTimeTablePage />
         },
-  
-        { path: "/studentmessagestoadmin/:userId",  
-            element:<StudentMessagesToAdminPage/>
+
+        {
+            path: "/studentmessagestoadmin/:userId",
+            element: <StudentMessagesToAdminPage />
         },
-        { path: "/studenttoadmin",  
-            element:<MessagesFromStudentToAdmin/>
+        {
+            path: "/studenttoadmin",
+            element: <MessagesFromStudentToAdmin />
         },
-        { path: "/mystudents/:userId",  
-            element:<MyStudentsPage/>
+        {
+            path: "/mystudents/:userId",
+            element: <MyStudentsPage />
         },
-  
-        { path: "/homework/:userId",  
-            element:<HomeWorkPage/>
+
+        {
+            path: "/homework/:userId",
+            element: <HomeWorkPage />
         },
-  
-  
-        { path: "/myhomework/:userId",  
-            element:<MyHomeWorkPage/>
+
+
+        {
+            path: "/myhomework/:userId",
+            element: <MyHomeWorkPage />
         },
-  
+
     ],
 )
 
